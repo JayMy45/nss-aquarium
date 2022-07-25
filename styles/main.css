@@ -1,0 +1,112 @@
+.fish__header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: .0%;
+}
+
+/* .fish__header--image {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+    width: fit-content;
+    align-items: center;
+} */
+
+.fish__quote {
+    display: flex;
+    font-size: 30px;
+    justify-content: end;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-family: cursive;
+}
+
+.fish__header--image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.fish__header--centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: traslate(-50%, -50%);
+    font-size: 28px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+}
+
+#fish__card {
+    display: flex;
+    flex: auto;
+    padding: 5px;
+    flex-basis: auto;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#fish_card>* {
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    flex-basis: auto;
+}
+
+.fish__card-- {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    width: 300px;
+    background: #fff;
+    text-align: left;
+    font-size: 16px;
+    font-family: sans-serif;
+    font float: left;
+    margin: 10px;
+    margin-bottom: 4%;
+}
+
+.fish__card--text {
+    text-align: center;
+}
+
+.fish__card--aside {
+    box-shadow: 0 2px 4px 0 black;
+    text-align: center;
+}
+
+#fish__card--tank {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    padding: 5px;
+    flex-basis: auto;
+    flex-direction: column;
+    margin-left: 5%;
+    background-color: lightblue;
+    background-size: 100% 100%;
+}
+
+.fish__card--tank {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    width: 30em;
+    height: 20em;
+    background: #fff;
+    text-align: left;
+    font-size: 16px;
+    font-family: sans-serif;
+    font float: left;
+    margin: 15%;
+    margin-bottom: 4%;
+    margin-right: 100%
+}
+
+.fish__card--tankcare {
+    text-align: center;
+}
