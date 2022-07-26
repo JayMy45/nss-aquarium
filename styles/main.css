@@ -69,7 +69,11 @@ article {
     margin-bottom: 4%;
 }
 
-.fish__card--text {
+.fish__card--name {
+    text-align: center;
+}
+
+.fish__card--places {
     text-align: center;
 }
 
