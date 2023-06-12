@@ -6,28 +6,26 @@
  */
 const database = {
     fish: [
-        { fish: "Nemo", name: "Clownfish", size: 5 },
-        { fish: "Bart", name: "Mandarinfish", size: 2 },
-        { fish: "Dori", name: "Regal Tang", size: 8 },
-        { fish: "Nomencleture", name: "Clownfish", size: 10 },
-        { fish: "Arti", name: "Sheepshead", size: 11 },
-        { fish: "Circuit", name: "Queen Angelfish", size: 3 },
-        { fish: "Sheepy", name: "Sheepshead", size: 5 },
-        { fish: "Cuitie", name: "Scup", size: 7 },
-        { fish: "BlueBlue", name: "Regal Tang", size: 10 },
-        { fish: "Beam", name: "Annular Seabream", size: 12 },
-        { fish: "Middy", name: "Clownfish", size: 11 },
-        { fish: "Tang", name: "Orange-lined Triggerfish", size: 6 },
-        { fish: "Brie", name: "Orange-lined Triggerfish", size: 15 },
-        { fish: "Jay", name: "Scup", size: 8 },
-        { fish: "Canteen", name: "Clownfish", size: 4 },
-        { fish: "CartWheel", name: "Sheepshead", size: 1 },
-        { fish: "Crusty", name: "Clownfish", size: 2 },
-        { fish: "Lori", name: "Regal Tang", size: 8 },
-        { fish: "LutherUK", name: "Clownfish", size: 2 },
+        { name: "Nemo", species: "Clownfish", length: 5, food: "Hamburger", location: 'Cairo', image: 'https://i.pinimg.com/originals/50/e2/a0/50e2a0bdde0faadf63f337e32cd68b3e.jpg' },
+        { name: "Bart", species: "Mandarinfish", length: 2, food: "French Fries", location: 'Charleston, SC', image: 'https://30a.com/wp-content/uploads/2021/12/Untitled-design-2.png' },
+        { name: "Dori", species: "Regal Tang", length: 8, food: "Baked Chicken", location: 'Cairo', image: 'https://www.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg' },
+        { name: "Nomencleture", species: "Clownfish", length: 10, food: "Fried Chicken", location: 'Charleston, SC', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu5zNJfVQZtvtZb38oPzjcojULqmU5grNfyw&usqp=CAU' },
+        { name: "Circuit", species: "Queen Angelfish", length: 3, food: "Pizza", location: 'Mumbai, Maharashtra', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Queen_Angelfish.jpg/640px-Queen_Angelfish.jpg' },
+        { name: "Cuitie", species: "Scup", length: 7, food: "Onion Rings", location: 'Visakhapatnam, Andhra Pradesh', image: 'https://safmc.net/wp-content/uploads/2022/01/scup-porgy.png' },
+        { name: "BlueBlue", species: "Regal Tang", length: 10, food: "Lemon Slices", location: 'Visakhapatnam, Andhra Pradesh', image: 'https://www.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg' },
+        { name: "Beam", species: "Annular Seabream", length: 12, food: "Lettuce", location: 'Cairo', image: 'https://live.staticflickr.com/1928/44183213104_50c2a55f31_b.jpg' },
+        { name: "Middy", species: "Clownfish", length: 11, food: "Tomato", location: 'Charleston, SC', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg/640px-Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg' },
+        { name: "Tang", species: "Orange-lined Triggerfish", length: 6, food: "Sushi Hold the Fish", location: 'Bekalfort Beach, Kerala', image: 'https://live.staticflickr.com/65535/51758453421_38464f356d_b.jpg' },
+        { name: "Brie", species: "Orange-lined Triggerfish", length: 15, food: "Taco", location: 'Bekalfort Beach, Kerala', image: 'https://live.staticflickr.com/65535/51758453421_38464f356d_b.jpg' },
+        { name: "Jay", species: "Scup", length: 8, food: "Brisket", location: 'Bekalfort Beach, Kerala', image: 'https://safmc.net/wp-content/uploads/2022/01/scup-porgy.png' },
+        { name: "Canteen", species: "Clownfish", length: 4, food: "Big T's BBQ", location: 'Hurghada', image: 'https://i.pinimg.com/originals/50/e2/a0/50e2a0bdde0faadf63f337e32cd68b3e.jpg' },
+        { name: "CartWheel", species: "Queen Angelfish", length: 1, food: "Coffee", location: 'San Diego, CA', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Queen_Angelfish.jpg/640px-Queen_Angelfish.jpg' },
+        { name: "Crusty", species: "Clownfish", length: 2, food: "Lady Grey Tea", location: 'Laguna Beach, CA', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg/640px-Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg' },
+        { name: "Lori", species: "Regal Tang", length: 8, food: "Ice Cream", location: 'Charleston, SC', image: 'https://www.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg' },
+        { name: "LutherUK", species: "Clownfish", length: 2, food: "Cookies", location: 'Mumbai, Maharashtra', image: 'https://i.pinimg.com/originals/50/e2/a0/50e2a0bdde0faadf63f337e32cd68b3e.jpg' },
     ]
 }
 
 export const getFish = () => {
-    return database.fishes.map((fish) => ({ ...fish }))
+    return database.fish.map((fish) => ({ ...fish }))
 }
