@@ -17,6 +17,8 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
+    margin-top: 2rem;
+
 }
 
 .fish_card {
